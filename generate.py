@@ -41,6 +41,7 @@ THEMES = {
 }
 WIDTH = 985
 LINE = 20  # px between rows
+ART_FONT, ART_LINE = 12, 15  # the portrait is drawn smaller, for more detail
 COL = 58  # characters from the start of a row to where its value ends (dot leaders fill the gap)
 
 
@@ -102,11 +103,11 @@ def card(c, numbers, art, today):
     rows.append(row("Stars", str(n["stars"]), c))
     rows.append(row("Commits", f"{n['commits']:,}", c))
     rows.append(row("Followers", str(n["followers"]), c))
-    height = max(len(rows), len(art)) * LINE + 40
+    height = max(len(rows) * LINE, len(art) * ART_LINE) + 40
     out = [f'<svg xmlns="http://www.w3.org/2000/svg" font-family="ConsolasFallback,Consolas,\'Courier New\',monospace" width="{WIDTH}px" height="{height}px" font-size="16px">',
            f'<rect width="{WIDTH}px" height="{height}px" fill="{c["bg"]}" rx="15"/>',
-           f'<text x="15" y="30" fill="{c["art"]}" class="ascii" xml:space="preserve">']
-    out += [f'<tspan x="15" y="{30 + i * LINE}">{html.escape(line)}</tspan>' for i, line in enumerate(art)]
+           f'<text x="15" y="30" fill="{c["art"]}" font-size="{ART_FONT}px" class="ascii" xml:space="preserve">']
+    out += [f'<tspan x="15" y="{30 + i * ART_LINE}">{html.escape(line)}</tspan>' for i, line in enumerate(art)]
     out.append("</text>")
     out.append(f'<text x="390" y="30" fill="{c["text"]}" xml:space="preserve">')
     out += [f'<tspan x="390" y="{30 + i * LINE}">{r}</tspan>' for i, r in enumerate(rows)]
