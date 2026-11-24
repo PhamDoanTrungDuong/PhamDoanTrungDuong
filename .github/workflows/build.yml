@@ -1,4 +1,4 @@
-# Redraws the profile card every day with fresh GitHub numbers (and on demand).
+﻿# Redraws the profile card every day with fresh GitHub numbers (and on demand).
 name: Profile card
 
 on:
@@ -29,5 +29,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add dark_mode.svg light_mode.svg
-          git diff --cached --quiet || git commit -m "Cập nhật số liệu trên trang hồ sơ"
+          git diff --cached --quiet || git commit -m "Cáº­p nháº­t sá»‘ liá»‡u trÃªn trang há»“ sÆ¡"
           git push
