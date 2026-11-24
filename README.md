@@ -20,8 +20,7 @@
 
 <img align="right" alt="Coding" width="360" src="https://cdn.dribbble.com/users/1162077/screenshots/3848914/programmer.gif" />
 
-- 🔭 I’m currently working on **[Store](https://github.com/PhamDoanTrungDuong/store)**
-- 🚀 Latest project: **[Dynamik](https://github.com/PhamDoanTrungDuong/Dynamik)** — a Dynamic Island–style notch for Windows, written in Rust
+- 🔭 I’m currently working on **[Dynamik](https://github.com/PhamDoanTrungDuong/Dynamik)** — a Dynamic Island–style notch for Windows, written in Rust
 - 🌱 I’m currently learning **C#**
 - 💬 Ask me about **React, ASP.NET**
 - 📫 How to reach me: **pdtduong@gmail.com**
