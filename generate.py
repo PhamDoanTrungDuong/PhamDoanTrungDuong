@@ -9,7 +9,7 @@ import json
 import os
 import urllib.request
 
-USER = "PhamDoanTrungDuong"
+USER = "Whitedogggg"
 JOINED = datetime.date(2020, 12, 25)  # when this GitHub account was made
 
 # (key, value) rows; None is a blank line, a str alone is a section heading.
